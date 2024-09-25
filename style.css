@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    align-items: center;
+
+}
+.logo{
+    width: 200px;
+
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.homecontent{
+    margin: 15% 0px 0px 13%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Pacifico", system-ui;
+}
+#Lname{
+    font-family: "Pacifico", system-ui;
+    color: rgb(68, 68, 116);
+}
+#userdetails{
+    line-height: 1;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: beige;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.homeImage{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 3s,left 3s;
+
+}
+.homeImage:hover #lady{
+    left: 30%;
+}
+.homeImage:hover #shape{
+    bottom: 75px;
+
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 40px;
+    font-family: "Pacifico", system-ui;
+}
+.subhead{
+    font-size: 25px;
+    color: rgb(130, 72, 224);
+    font-family: "Pacifico", system-ui;
+}
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.img1{
+    width: 80%;
+
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 1.2rem;
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 10px;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skillshead{
+    text-align: center;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 8px;
+}
+.barhead, .barPercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: chocolate;
+    width: 89%;
+}
+.jsbar{
+    background-color: chocolate;
+    width: 80%;
+
+}
+.cssbar{
+    background-color: chocolate;
+    width: 90%;
+}
+.reactbar{
+    background-color: chocolate;
+    width: 90%;
+
+}
+#contact{
+    margin: 5% 8% 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px  10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon :hover{
+    background-image: linear-gradient(to bottom right,yellow,red, rgb(26, 191, 202));
+}
+.icon :hover .brands{
+    color: aliceblue;
+    /* animmation */
+    animation: rotate 3s;
+
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+footer{
+    margin: 8% 0px 0px 0px;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin-top: -40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(231, 230, 206);
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px ;
+}
